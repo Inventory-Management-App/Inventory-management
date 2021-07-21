@@ -36,7 +36,7 @@
         android:layout_width="494dp"
         android:layout_height="117dp"
         android:fontFamily="@font/arbutus"
-        android:text="Shopventory"
+        android:text="Iventory"
         android:textSize="80sp"
         app:autoSizeMaxTextSize="100sp"
         app:autoSizeMinTextSize="20sp"
