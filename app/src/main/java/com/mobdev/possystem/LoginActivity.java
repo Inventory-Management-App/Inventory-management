@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     else {
                         Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_LONG).show();
-//                        startActivity(new Intent(LoginActivity.this, ShopOwnerHomeActivity.class));
+                        startActivity(new Intent(LoginActivity.this, ShopOwnerHomeActivity.class));
                     }
 
                 }
