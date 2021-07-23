@@ -20,6 +20,7 @@ public class LoginView extends AppCompatActivity {
     EditText eName;
     EditText ePassword;
     Button eLogin;
+
     String userName = "";
     String userPassword = "";
 
@@ -37,7 +38,6 @@ public class LoginView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_view);
 
-        /* Bind the XML views to Java Code Elements */
         eName = (EditText)findViewById(R.id.editTextName);
         ePassword = (EditText)findViewById(R.id.editTextTextPassword);
         eLogin = (Button) findViewById(R.id.buttonSignIn);

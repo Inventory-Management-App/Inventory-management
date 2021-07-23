@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.POS_UI">
-        <activity android:name=".UpdateItemView"></activity>
+        <activity android:name=".CashierBalanceReport"></activity>
+        <activity android:name=".CreateCashierView" />
+        <activity android:name=".UpdateItemView" />
         <activity android:name=".StocksView" />
         <activity android:name=".ManagerHomeView" />
         <activity android:name=".LoginView" />
