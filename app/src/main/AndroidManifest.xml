@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.POS_UI">
         <activity android:name=".UpdateItemView"></activity>
+        <activity android:name=".CashierHomePage"></activity>
+        <activity android:name=".DailySalesReportActivity"></activity>
         <activity android:name=".StocksView" />
         <activity android:name=".ManagerHomeView" />
         <activity android:name=".LoginView" />

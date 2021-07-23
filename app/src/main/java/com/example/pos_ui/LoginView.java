@@ -65,7 +65,7 @@ public class LoginView extends AppCompatActivity {
 
                     else {
                         Toast.makeText(LoginView.this, "Login Successful!", Toast.LENGTH_LONG).show();
-//                        startActivity(new Intent(LoginActivity.this, ShopOwnerHomeActivity.class));
+//                        startActivity(new Intent(LoginView.this, DailySalesReportActivity.class));
                     }
 
                 }

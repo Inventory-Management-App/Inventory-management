@@ -22,5 +22,31 @@
         app:layout_constraintVertical_bias="0.23000002"
         app:layout_constraintWidth_percent="0.4" />
 
+    <Button
+        android:id="@+id/daily_sales_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:layout_marginBottom="318dp"
+        android:text="Daily Sales Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cashier_home_btn"
+        app:layout_constraintTop_toBottomOf="@+id/toStocks" />
+
+    <Button
+        android:id="@+id/cashier_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="534dp"
+        android:layout_marginBottom="318dp"
+        android:text="Cashier Home Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/daily_sales_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
