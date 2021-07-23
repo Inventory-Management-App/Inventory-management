@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:scaleType="fitXY"
-            android:src="@drawable/back_icon"
+            android:src="@drawable/back_left"
             app:layout_constraintEnd_toStartOf="@id/textViewAccounts"
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="25dp" />

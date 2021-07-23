@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.pos_ui.Controller.BalanceAdapter;
 import com.example.pos_ui.Model.BalanceModel;
@@ -16,6 +20,7 @@ public class CashierBalanceReport extends AppCompatActivity {
 
     RecyclerView recyclerView;
     BalanceAdapter adapter;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +28,16 @@ public class CashierBalanceReport extends AppCompatActivity {
         setContentView(R.layout.activity_cashier_balance_report);
 
         recyclerView = findViewById(R.id.recycler_view);
+        back = findViewById(R.id.imageViewBack);
 
         setRecyclerView();
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CashierBalanceReport.this, CashierHomePage.class));
+            }
+        });
     }
 
     private void setRecyclerView() {
@@ -58,4 +71,5 @@ public class CashierBalanceReport extends AppCompatActivity {
         return balance_list;
 
     }
+
 }

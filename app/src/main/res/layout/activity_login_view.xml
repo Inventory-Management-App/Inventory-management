@@ -10,7 +10,6 @@
         android:layout_width="600dp"
         android:layout_height="500dp"
         android:layout_gravity="end"
-
         android:background="@drawable/multistore"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
