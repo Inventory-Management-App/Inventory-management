@@ -16,7 +16,10 @@ public class ManagerHomeView extends AppCompatActivity {
 
         Button btnToStocks = (Button) findViewById(R.id.toStocks);
         Button btnToDailySales = (Button) findViewById(R.id.daily_sales_btn);
-        Button btnCashierHome = (Button) findViewById(R.id.cashier_home_btn);
+       // Button btnCashierHome = (Button) findViewById(R.id.cashier_home_btn);
+        Button btnCashierBalance = (Button) findViewById(R.id.toCashBalance);
+        Button btnCreateCasierView = (Button) findViewById(R.id.toCreateNewAC);
+        Button btnCashBalanceReport = (Button) findViewById(R.id.toCashBalance);
 
         btnToStocks.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,11 +37,19 @@ public class ManagerHomeView extends AppCompatActivity {
             }
         });
 
-        btnCashierHome.setOnClickListener(new View.OnClickListener() {
+        btnCreateCasierView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnCashierHome = new Intent(ManagerHomeView.this,CashierHomePage.class);
+                Intent btnCashierHome = new Intent(ManagerHomeView.this,CreateCashierView.class);
                 startActivity(btnCashierHome);
+            }
+        });
+
+        btnCashBalanceReport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btnCashBalance = new Intent(ManagerHomeView.this,CashierBalanceReport.class);
+                startActivity(btnCashBalance);
             }
         });
     }

@@ -4,49 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".ManagerHomeView">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/cashierTaskBreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cashier Task Screen"
+        android:textColor="#565454"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guidelineStart1"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop1" />
+
+    <TextView
+        android:id="@+id/cashierTaskSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cashier Select Task"
+        android:textColor="#565454 "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintStart_toEndOf="@+id/guidelineStart1"
+        app:layout_constraintTop_toBottomOf="@+id/cashierTaskBreak" />
+
+    <Button
+        android:id="@+id/toCashier"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cashierhomebtns_style"
+        android:text="Cashier"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.09"
+       app:layout_constraintTop_toBottomOf="@id/guidelineMiddle1"
+       app:layout_constraintStart_toStartOf="@id/guidelineStart1" />
+
+    <Button
+        android:id="@+id/toCashBalance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cashierhomebtns_style"
+        android:paddingVertical="10dp"
+        android:text="Cash Balance"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintTop_toBottomOf="@id/toCashier" />
 
     <Button
         android:id="@+id/toStocks"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/button_style_new"
+        android:background="@drawable/cashierhomebtns_style"
         android:text="Manage Stocks"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintWidth_percent="0.45"
         app:layout_constraintHeight_percent="0.09"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23000002"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd1"
+        app:layout_constraintTop_toBottomOf="@id/guidelineMiddle1"/>
+
 
     <Button
         android:id="@+id/daily_sales_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:layout_marginBottom="318dp"
-        android:text="Daily Sales Report"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/cashier_home_btn"
-        app:layout_constraintTop_toBottomOf="@+id/toStocks" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cashierhomebtns_style"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="View Reports"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintTop_toBottomOf="@id/toStocks"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd1"/>
 
     <Button
-        android:id="@+id/cashier_home_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="534dp"
-        android:layout_marginBottom="318dp"
-        android:text="Cashier Home Page"
+        android:id="@+id/toCreateNewAC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cashierhomebtns_style"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.09"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Create New Acoounts"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/daily_sales_btn"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd1"/>
+
+    <Button
+        android:id="@+id/cashierSignout_Btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cashiersignout_button_style"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Sign Out"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/cashier_home_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.2"
+        app:srcCompat="@drawable/multistores"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="520dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/daily_sales_btn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHeight_percent="0.40"
+        app:layout_constraintWidth_percent="0.42"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

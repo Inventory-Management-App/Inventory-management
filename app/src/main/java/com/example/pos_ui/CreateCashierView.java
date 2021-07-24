@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pos_ui.Model.RegisterCashierCredentials;
@@ -18,6 +19,7 @@ public class CreateCashierView extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private EditText etConfirmPassword;
+    private TextView tvUpdatePassword;
 
     public static RegisterCashierCredentials credentials;
 
@@ -32,6 +34,7 @@ public class CreateCashierView extends AppCompatActivity {
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
         ImageView btnBack = findViewById(R.id.back_left);
         Button btnConfirm = findViewById(R.id.btnConfirm);
+        TextView tvUpdatePassword = findViewById(R.id.textViewUpdatePassword);
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +77,14 @@ public class CreateCashierView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CreateCashierView.this, ManagerHomeView.class));
+            }
+
+        });
+
+        tvUpdatePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CreateCashierView.this, UpdatePassword.class));
             }
 
         });
