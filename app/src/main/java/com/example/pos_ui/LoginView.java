@@ -1,28 +1,22 @@
 package com.example.pos_ui;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class LoginView extends AppCompatActivity {
 
-    EditText eName;
-    EditText ePassword;
-    Button eLogin;
+    private EditText eName;
+    private EditText ePassword;
 
-    String userName = "";
-    String userPassword = "";
+    private String userName = "";
+    private String userPassword = "";
 
     /* Class to hold credentials */
     static class Credentials
@@ -40,7 +34,7 @@ public class LoginView extends AppCompatActivity {
 
         eName = (EditText)findViewById(R.id.editTextName);
         ePassword = (EditText)findViewById(R.id.editTextTextPassword);
-        eLogin = (Button) findViewById(R.id.buttonSignIn);
+        Button eLogin = (Button) findViewById(R.id.buttonSignIn);
 
 
         eLogin.setOnClickListener(new View.OnClickListener() {
