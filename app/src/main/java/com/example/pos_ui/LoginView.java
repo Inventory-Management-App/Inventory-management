@@ -36,7 +36,7 @@ public class LoginView extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         eName = (EditText)findViewById(R.id.editTextName);
-        ePassword = (EditText)findViewById(R.id.editTextTextPassword);
+        ePassword = (EditText)findViewById(R.id.editTextPassword);
         Button eLogin = (Button) findViewById(R.id.buttonSignIn);
 
 
